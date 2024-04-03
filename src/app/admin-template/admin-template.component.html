@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <a  class="navbar-brand" href="">DARK TRACE</a>
+      <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div ngbDropdown class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Action
+            </a>
+            <ul ngbDropdownMenu class="dropdown dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/admin/appliance">Appliance</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/admin/client">Client</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/admin/pov">Pov</a></li>
+              <!-- <li><a ngbDropdownItem class="dropdown-item" routerLink="/type">Type</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="typePrestation">Type type Prestatio</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/suivi" >Suivi</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/sceance">Sceance</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/contact">Contact</a></li> -->
+  
+            </ul>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  
+  <router-outlet>
+    
+  </router-outlet>
+  

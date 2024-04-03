@@ -1,0 +1,48 @@
+               +--------------------------------+
+               |         Building Management     |
+               +--------------------------------+
+               | - Manage Building Info          |
+               | - Manage Utilities              |
+               | - Manage Agents                 |
+               | - Process Payments              |
+               +--------------------------------+
+                              |
+                              |
+    +-------------------------+-------------------------+
+    |                        User                       |
+    +-------------------------+-------------------------+
+    | + user_id: int                                   |
+    | + username: string                               |
+    | + password: string                               |
+    | + email: string                                  |
+    | + phone_number: string                           |
+    +-------------------------+-------------------------+
+                              |
+                              |
+          +-------------------+-------------------+
+          |                  Building              |
+          +-------------------+-------------------+
+          | + building_id: int                     |
+          | + name: string                         |
+          | + address: string                      |
+          | + utilities: list                      |
+          | + agents: list                         |
+          +-------------------+-------------------+
+                            /   \
+                           /     \
+                          /       \
+    +----------------+  /         \   +-----------------+
+    |   Agent User    | /           \  |  Company Admin  |
+    +----------------+               +-----------------+
+    | + agent_id: int |               | + company_id: int|
+    | + building_id: int             | + company_name: string |
+    +----------------+               +-----------------+
+                                    /        \
+                                   /          \
+                                  /            \
+                        +---------------+   +---------------+
+                        |   Agent      |   |   Company     |
+                        +---------------+   +---------------+
+                        | + name: string|   | + company_id: int |
+                        | + email: string|   | + company_name: string |
+                        +---------------+   +---------------+
