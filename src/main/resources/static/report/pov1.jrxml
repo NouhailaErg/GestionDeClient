@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pov1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2b48bea6-cabf-4ca5-aad4-6d3dd1ee587d">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="applianceLibelle" class="java.lang.String"/>
+	<field name="clientLibelle" class="java.lang.String"/>
+	<field name="dateDebut" class="java.util.Date"/>
+	<field name="dateFin" class="java.util.Date"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="compteManager" class="java.lang.String"/>
+	<field name="ingenieurCybersecurite" class="java.lang.String"/>
+	<field name="analyseCybersecurity" class="java.lang.String"/>
+	<field name="libelle_pov" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="520" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<staticText>
+				<reportElement x="20" y="50" width="130" height="30" uuid="2ee354ab-7530-4d1f-870a-e44e537d7490"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Appliance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="90" width="130" height="30" uuid="ef0cf335-1861-42dc-92d9-9b04e4f3320e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="130" width="130" height="30" uuid="1c7b125b-d7a1-4a01-98a5-51b401ae83e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Date debut]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="170" width="130" height="30" uuid="36937a5c-2090-4c08-a2ef-2096415ec25f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Date fin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="210" width="130" height="30" uuid="0f1b58e9-0fcc-4394-abae-5de467e920a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="250" width="130" height="30" uuid="afd75ddb-a6dc-45cb-a9fb-4d971b0f2daf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Compte Manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="290" width="130" height="30" uuid="4aa7e412-d48d-42d1-84ec-f28ebf864359"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Ingenieur CS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="330" width="130" height="30" uuid="aa142899-47db-4fa9-bf85-a784ec92b815"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Analyse CS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="370" width="130" height="30" uuid="87e02e67-67ec-4d0a-b80d-cfdd5c26b9a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="12"/>
+				</textElement>
+				<text><![CDATA[Libelle pov]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="210" width="100" height="31" uuid="d677d664-ed67-49e4-8acf-1a7380cb2276"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="50" width="100" height="30" uuid="b12e3591-aa5a-4eb9-b848-3150ec27b63c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{applianceLibelle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="90" width="100" height="30" uuid="a6fb9c3c-5420-4311-8ba4-1a3bf25fabb1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{clientLibelle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="130" width="100" height="30" uuid="c8c93002-bdc6-472d-be7b-0937612f48ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dateDebut}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="170" width="100" height="30" uuid="76491353-3724-4459-b897-91a0791474ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dateFin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="250" width="100" height="30" uuid="45cc860f-322b-4d3a-bfa9-ec23769fd79a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{compteManager}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="290" width="100" height="30" uuid="f4c07d54-c315-4d52-91fe-33e874a97add"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ingenieurCybersecurite}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="330" width="100" height="30" uuid="f18dde80-eb64-49e5-8055-f9936853c1e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{analyseCybersecurity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="370" width="100" height="30" uuid="c6a7b11c-7cf5-4ec9-b95a-2de10abf1599"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{libelle_pov}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
